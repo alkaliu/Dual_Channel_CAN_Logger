@@ -5,10 +5,21 @@
 	(uuid "c59a6287-5b72-492b-aa01-526032899224")
 	(paper "A4")
 	(title_block
-		(title "2CH CAN  Logger")
-		(rev "1.0")
+		(title "Dual Channel CAN Logger")
+		(rev "1.1")
 	)
 	(lib_symbols)
+	(text "rev 1.0 - initial\nrev 1.1 \n  * replace solder jumpers with 1.27 jumpers\n  * increase resistors for LED indicators (to 5k1 and 10k for 12v line)"
+		(exclude_from_sim no)
+		(at 182.372 153.416 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "7c3fea8d-1715-46c5-a04f-0f8919c33300")
+	)
 	(sheet
 		(at 53.34 50.8)
 		(size 17.78 5.08)

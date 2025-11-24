@@ -5,9 +5,9 @@
 	(uuid "0dd37590-8ce2-428a-a493-7ce5cff82868")
 	(paper "A4")
 	(title_block
-		(title "2CH CAN  Logger")
+		(title "Dual Channel CAN Logger")
 		(date "2025-10-22")
-		(rev "1.0")
+		(rev "1.1")
 	)
 	(lib_symbols
 		(symbol "Device:C_Small"
@@ -2422,7 +2422,7 @@
 	)
 	(wire
 		(pts
-			(xy 74.93 53.34) (xy 87.63 53.34)
+			(xy 74.93 53.34) (xy 104.14 53.34)
 		)
 		(stroke
 			(width 0)
@@ -2469,16 +2469,6 @@
 			(type default)
 		)
 		(uuid "091574c9-0bb9-4185-ad3c-0793492ddcae")
-	)
-	(wire
-		(pts
-			(xy 92.71 53.34) (xy 104.14 53.34)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0be4026a-9d8d-42c7-bef5-284eb4cf079e")
 	)
 	(wire
 		(pts
@@ -2822,7 +2812,7 @@
 	)
 	(wire
 		(pts
-			(xy 74.93 55.88) (xy 81.28 55.88)
+			(xy 74.93 55.88) (xy 104.14 55.88)
 		)
 		(stroke
 			(width 0)
@@ -3159,16 +3149,6 @@
 			(type default)
 		)
 		(uuid "b92d814a-7104-45aa-9652-8015ab0b3d5c")
-	)
-	(wire
-		(pts
-			(xy 86.36 55.88) (xy 104.14 55.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ba6ba0e7-e665-4d30-a12a-76571bef59f9")
 	)
 	(wire
 		(pts
@@ -3642,7 +3622,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C25804.pdf"
 			(at 142.24 111.76 0)
 			(effects
 				(font
@@ -3651,7 +3631,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor, small symbol"
+		(property "Description" "100mW 10kΩ 75V ±100ppm/℃ Thick Film Resistor ±1% 0603 Chip Resistor - Surface Mount RoHS"
 			(at 142.24 111.76 0)
 			(effects
 				(font
@@ -3670,6 +3650,15 @@
 			)
 		)
 		(property "Supplier Part" "C25804"
+			(at 142.24 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
 			(at 142.24 111.76 0)
 			(effects
 				(font
@@ -3788,6 +3777,15 @@
 			)
 		)
 		(property "LCSC Part Name" "单向ESD"
+			(at 106.68 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
 			(at 106.68 134.62 0)
 			(effects
 				(font
@@ -4126,7 +4124,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C23186.pdf"
 			(at 163.83 66.04 0)
 			(effects
 				(font
@@ -4135,7 +4133,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor, small symbol"
+		(property "Description" "100mW 5.1kΩ 75V ±100ppm/℃ Thick Film Resistor ±1% 0603 Chip Resistor - Surface Mount RoHS"
 			(at 163.83 66.04 0)
 			(effects
 				(font
@@ -4154,6 +4152,15 @@
 			)
 		)
 		(property "Supplier Part" "C23186"
+			(at 163.83 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
 			(at 163.83 66.04 0)
 			(effects
 				(font
@@ -4345,7 +4352,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C25804.pdf"
 			(at 134.62 111.76 0)
 			(effects
 				(font
@@ -4354,7 +4361,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor, small symbol"
+		(property "Description" "100mW 10kΩ 75V ±100ppm/℃ Thick Film Resistor ±1% 0603 Chip Resistor - Surface Mount RoHS"
 			(at 134.62 111.76 0)
 			(effects
 				(font
@@ -4373,6 +4380,15 @@
 			)
 		)
 		(property "Supplier Part" "C25804"
+			(at 134.62 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
 			(at 134.62 111.76 0)
 			(effects
 				(font
@@ -4457,91 +4473,6 @@
 			(project "canlogger"
 				(path "/c59a6287-5b72-492b-aa01-526032899224/6ef1d395-aa53-4e7a-8e4b-b7828baf3fc4"
 					(reference "#PWR043")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small")
-		(at 83.82 55.88 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp yes)
-		(uuid "5c563a50-b606-41c6-aae2-50d4e8534945")
-		(property "Reference" "R29"
-			(at 86.106 58.166 90)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-			)
-		)
-		(property "Value" "0"
-			(at 82.804 57.912 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "EasyEDA_Lib:R0603"
-			(at 83.82 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8578255895094087680"
-			(at 83.82 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "-55℃~+155℃ 0Ω 100mW 75V Thick Film Resistor ±1% 0603 Chip Resistor - Surface Mount ROHS"
-			(at 83.82 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supplier" "LCSC"
-			(at 83.82 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supplier Part" "C21189"
-			(at 83.82 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "3cc42f57-fbb4-47b0-9cb8-f22ceac631da")
-		)
-		(pin "2"
-			(uuid "c3ebb7c4-7961-499f-92c0-0baa09ff0d8b")
-		)
-		(instances
-			(project "canlogger"
-				(path "/c59a6287-5b72-492b-aa01-526032899224/6ef1d395-aa53-4e7a-8e4b-b7828baf3fc4"
-					(reference "R29")
 					(unit 1)
 				)
 			)
@@ -4846,6 +4777,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Pins" ""
+			(at 114.3 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "6"
 			(uuid "fd65d75c-beef-4344-b591-43e3688701e7")
 		)
@@ -4944,6 +4884,15 @@
 			)
 		)
 		(property "Supplier Part" "C14663"
+			(at 97.79 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
 			(at 97.79 66.04 0)
 			(effects
 				(font
@@ -5137,7 +5086,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C23186.pdf"
 			(at 171.45 66.04 0)
 			(effects
 				(font
@@ -5146,7 +5095,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor, small symbol"
+		(property "Description" "100mW 5.1kΩ 75V ±100ppm/℃ Thick Film Resistor ±1% 0603 Chip Resistor - Surface Mount RoHS"
 			(at 171.45 66.04 0)
 			(effects
 				(font
@@ -5165,6 +5114,15 @@
 			)
 		)
 		(property "Supplier Part" "C23186"
+			(at 171.45 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
 			(at 171.45 66.04 0)
 			(effects
 				(font
@@ -5261,6 +5219,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Pins" ""
+			(at 180.34 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "1e300e4e-ad14-460c-bdea-8888151dbed2")
 		)
@@ -5312,7 +5279,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C25804.pdf"
 			(at 149.86 111.76 0)
 			(effects
 				(font
@@ -5321,7 +5288,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor, small symbol"
+		(property "Description" "100mW 10kΩ 75V ±100ppm/℃ Thick Film Resistor ±1% 0603 Chip Resistor - Surface Mount RoHS"
 			(at 149.86 111.76 0)
 			(effects
 				(font
@@ -5340,6 +5307,15 @@
 			)
 		)
 		(property "Supplier Part" "C25804"
+			(at 149.86 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
 			(at 149.86 111.76 0)
 			(effects
 				(font
@@ -5453,6 +5429,15 @@
 			)
 		)
 		(property "LCSC Part Name" "Type-C 母 卧贴"
+			(at 201.93 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
 			(at 201.93 53.34 0)
 			(effects
 				(font
@@ -5621,6 +5606,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Pins" ""
+			(at 125.73 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "384ef493-9dbf-4558-963d-a618da437812")
 		)
@@ -5738,6 +5732,15 @@
 			)
 		)
 		(property "LCSC Part Name" "15V 500mA 1812自恢复"
+			(at 175.26 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
 			(at 175.26 40.64 0)
 			(effects
 				(font
@@ -5961,91 +5964,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small")
-		(at 90.17 53.34 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp yes)
-		(uuid "d7966278-006f-40dd-b3f1-00cb1984e1f7")
-		(property "Reference" "R28"
-			(at 91.694 51.054 90)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-			)
-		)
-		(property "Value" "0"
-			(at 88.392 51.054 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "EasyEDA_Lib:R0603"
-			(at 90.17 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8578255895094087680"
-			(at 90.17 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "-55℃~+155℃ 0Ω 100mW 75V Thick Film Resistor ±1% 0603 Chip Resistor - Surface Mount ROHS"
-			(at 90.17 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supplier" "LCSC"
-			(at 90.17 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supplier Part" "C21189"
-			(at 90.17 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "8a23ebd1-af61-43f7-8178-894399e5fb34")
-		)
-		(pin "2"
-			(uuid "c88d69f4-8ebb-4407-8c46-ce95a9c89956")
-		)
-		(instances
-			(project "canlogger"
-				(path "/c59a6287-5b72-492b-aa01-526032899224/6ef1d395-aa53-4e7a-8e4b-b7828baf3fc4"
-					(reference "R28")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 154.94 58.42 0)
 		(unit 1)
@@ -6210,6 +6128,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Pins" ""
+			(at 198.12 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "a9234c53-41ff-4d85-a32c-5740eab7fe1e")
 		)
@@ -6294,7 +6221,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C25804.pdf"
 			(at 157.48 111.76 0)
 			(effects
 				(font
@@ -6303,7 +6230,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor, small symbol"
+		(property "Description" "100mW 10kΩ 75V ±100ppm/℃ Thick Film Resistor ±1% 0603 Chip Resistor - Surface Mount RoHS"
 			(at 157.48 111.76 0)
 			(effects
 				(font
@@ -6322,6 +6249,15 @@
 			)
 		)
 		(property "Supplier Part" "C25804"
+			(at 157.48 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
 			(at 157.48 111.76 0)
 			(effects
 				(font
@@ -6410,6 +6346,15 @@
 			)
 		)
 		(property "Supplier Part" "C14663"
+			(at 170.18 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
 			(at 170.18 105.41 0)
 			(effects
 				(font
@@ -6593,6 +6538,15 @@
 			)
 		)
 		(property "LCSC Part Name" "单向ESD"
+			(at 154.94 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
 			(at 154.94 50.8 0)
 			(effects
 				(font

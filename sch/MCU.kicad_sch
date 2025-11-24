@@ -5,8 +5,8 @@
 	(uuid "331ba3ca-3851-431d-b608-023e6062a9b4")
 	(paper "A4")
 	(title_block
-		(title "2CH CAN  Logger")
-		(rev "1.0")
+		(title "Dual Channel CAN Logger")
+		(rev "1.1")
 	)
 	(lib_symbols
 		(symbol "Connector:DE9_Pins"
@@ -1271,6 +1271,221 @@
 						)
 					)
 					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "EasyEDA_Lib:DZ127S-22-06-55"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "EasyEDA_Lib:HDR-SMD_6P-P1.27-V-M-R2-C3-S1.27-LS5.5-1"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://item.szlcsc.com/datasheet/DZ127S-22-06-55/5807855.html"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Pin Structure:2x3P Pitch:1.27mm Circluar Pins/Square Pins:Pin Header Mounting Type:Surface Mount,Vertical Number of Rows:2 Number of Pins:6P Current Rating:1A Length of Mating Pin:3.5mm Insulation Height:1.5mm Contact Material:Brass Contact Plating:Gold C"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer Part" "DZ127S-22-06-55"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer" "DEALON(德艺隆)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Supplier Part" "C5160759"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Supplier" "LCSC"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "LCSC Part Name" "2x3P 间距:1.27mm 方针 立贴"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "DZ127S-22-06-55_1_0"
+				(rectangle
+					(start -2.54 5.08)
+					(end 2.54 -5.08)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin unspecified line
+					(at -5.08 2.54 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -5.08 -2.54 0)
+					(length 2.54)
+					(name "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 5.08 2.54 180)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 5.08 -2.54 180)
+					(length 2.54)
+					(name "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3604,6 +3819,99 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "canlogger_custom_lib:Jumper_Shunt"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board no)
+			(property "Reference" "H"
+				(at -1.778 2.286 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Jumper_Shunt"
+				(at 0 -3.302 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -0.762 0.762 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Jumper, shunt"
+				(at 0 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "jumper shunt "
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Jumper_Shunt_1_1"
+				(rectangle
+					(start -1.27 1.27)
+					(end 1.27 -1.27)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(rectangle
+					(start -1.27 -1.778)
+					(end 1.27 -2.286)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(rectangle
+					(start -1.016 -1.27)
+					(end 1.016 -1.778)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:+3V3"
 			(power)
 			(pin_numbers
@@ -3833,13 +4141,24 @@
 	)
 	(text "MIPI10 on STDC14 footprint\n+ VCP UART"
 		(exclude_from_sim no)
-		(at 118.364 185.928 0)
+		(at 116.078 183.896 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 		)
 		(uuid "5f34e7a1-0f0e-437d-a430-f002ca313e76")
+	)
+	(text "UART output selection\n a) 2-4 / 1-3 -> output to USB\n b) 6-4 / 5-3 -> output to STDC14"
+		(exclude_from_sim no)
+		(at 215.138 125.222 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "60badc8d-98ce-4fb2-9036-12ade6127f6e")
 	)
 	(text "LPUART1"
 		(exclude_from_sim no)
@@ -3902,7 +4221,7 @@
 		(uuid "04d2bae4-d333-4c4e-b768-427d1570dbcc")
 	)
 	(junction
-		(at 245.11 44.45)
+		(at 243.84 29.21)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "05f45b3e-c438-4c57-bb85-f2e86646dce5")
@@ -3920,7 +4239,7 @@
 		(uuid "12b0f5b3-d41f-4488-9cc6-2828f7fb183e")
 	)
 	(junction
-		(at 231.14 44.45)
+		(at 229.87 29.21)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2049da82-f473-43d5-937b-eb0e161326f9")
@@ -3956,7 +4275,7 @@
 		(uuid "3a571dbd-f582-477e-ae65-1119751c6b43")
 	)
 	(junction
-		(at 205.74 44.45)
+		(at 204.47 29.21)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "41696402-b7aa-473d-91b5-394cae9c7dfd")
@@ -3998,7 +4317,7 @@
 		(uuid "944a9f2e-434b-45d9-a326-aba0b7f686a7")
 	)
 	(junction
-		(at 218.44 44.45)
+		(at 217.17 29.21)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9746a528-0fa3-4d91-a4fa-d3f63bf61cfd")
@@ -4064,11 +4383,11 @@
 		(uuid "e68f860f-5ad3-4195-8b7a-d7ce735e9fb4")
 	)
 	(no_connect
-		(at 228.6 120.65)
+		(at 226.06 99.06)
 		(uuid "01af6d60-f792-4bfa-9742-e8929f7844be")
 	)
 	(no_connect
-		(at 228.6 115.57)
+		(at 226.06 93.98)
 		(uuid "03a887dd-73f3-4756-8e62-368e45a503c1")
 	)
 	(no_connect
@@ -4100,7 +4419,7 @@
 		(uuid "28349ac7-cb23-4c35-b8a1-7a39c5df08bd")
 	)
 	(no_connect
-		(at 228.6 105.41)
+		(at 226.06 83.82)
 		(uuid "2a536202-32be-4da8-94cd-d3b6f62d2795")
 	)
 	(no_connect
@@ -4169,7 +4488,7 @@
 	)
 	(wire
 		(pts
-			(xy 218.44 71.12) (xy 190.5 71.12)
+			(xy 217.17 55.88) (xy 189.23 55.88)
 		)
 		(stroke
 			(width 0)
@@ -4189,7 +4508,7 @@
 	)
 	(wire
 		(pts
-			(xy 245.11 44.45) (xy 231.14 44.45)
+			(xy 243.84 29.21) (xy 229.87 29.21)
 		)
 		(stroke
 			(width 0)
@@ -4199,7 +4518,17 @@
 	)
 	(wire
 		(pts
-			(xy 231.14 73.66) (xy 190.5 73.66)
+			(xy 187.96 142.24) (xy 189.23 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0295d657-9869-41da-89d5-f5118e6e748d")
+	)
+	(wire
+		(pts
+			(xy 229.87 58.42) (xy 189.23 58.42)
 		)
 		(stroke
 			(width 0)
@@ -4229,13 +4558,23 @@
 	)
 	(wire
 		(pts
-			(xy 215.9 113.03) (xy 228.6 113.03)
+			(xy 213.36 91.44) (xy 226.06 91.44)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "05d213a4-0ffa-4b28-a78a-f32ab7cff05b")
+	)
+	(wire
+		(pts
+			(xy 198.12 154.94) (xy 226.06 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0626ebdc-f620-454c-85fd-f137d8cf3d30")
 	)
 	(wire
 		(pts
@@ -4249,7 +4588,17 @@
 	)
 	(wire
 		(pts
-			(xy 215.9 102.87) (xy 228.6 102.87)
+			(xy 203.2 134.62) (xy 203.2 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "06b36328-0e1c-4a0b-b04d-2823c5627194")
+	)
+	(wire
+		(pts
+			(xy 213.36 81.28) (xy 226.06 81.28)
 		)
 		(stroke
 			(width 0)
@@ -4279,7 +4628,7 @@
 	)
 	(wire
 		(pts
-			(xy 218.44 44.45) (xy 205.74 44.45)
+			(xy 217.17 29.21) (xy 204.47 29.21)
 		)
 		(stroke
 			(width 0)
@@ -4309,7 +4658,7 @@
 	)
 	(wire
 		(pts
-			(xy 257.81 45.72) (xy 257.81 44.45)
+			(xy 256.54 30.48) (xy 256.54 29.21)
 		)
 		(stroke
 			(width 0)
@@ -4339,13 +4688,23 @@
 	)
 	(wire
 		(pts
-			(xy 257.81 60.96) (xy 257.81 78.74)
+			(xy 256.54 45.72) (xy 256.54 63.5)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "1562a439-e67d-4054-8686-55dc9bac4806")
+	)
+	(wire
+		(pts
+			(xy 189.23 134.62) (xy 200.66 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1adf0763-1225-4028-8738-cc60845166c6")
 	)
 	(wire
 		(pts
@@ -4369,6 +4728,16 @@
 	)
 	(wire
 		(pts
+			(xy 224.79 134.62) (xy 203.2 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "273bcf92-2c8c-4cde-96da-f261d1d3e137")
+	)
+	(wire
+		(pts
 			(xy 69.85 66.04) (xy 74.93 66.04)
 		)
 		(stroke
@@ -4389,7 +4758,7 @@
 	)
 	(wire
 		(pts
-			(xy 194.31 110.49) (xy 228.6 110.49)
+			(xy 191.77 88.9) (xy 226.06 88.9)
 		)
 		(stroke
 			(width 0)
@@ -4409,6 +4778,16 @@
 	)
 	(wire
 		(pts
+			(xy 198.12 137.16) (xy 219.71 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "378e4e9b-2417-4db5-88cf-3ba9bb437df8")
+	)
+	(wire
+		(pts
 			(xy 69.85 81.28) (xy 74.93 81.28)
 		)
 		(stroke
@@ -4419,7 +4798,7 @@
 	)
 	(wire
 		(pts
-			(xy 257.81 44.45) (xy 245.11 44.45)
+			(xy 256.54 29.21) (xy 243.84 29.21)
 		)
 		(stroke
 			(width 0)
@@ -4529,6 +4908,16 @@
 	)
 	(wire
 		(pts
+			(xy 200.66 134.62) (xy 200.66 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4a82166b-da24-40ba-8674-a9d6c1276f52")
+	)
+	(wire
+		(pts
 			(xy 107.95 36.83) (xy 119.38 36.83)
 		)
 		(stroke
@@ -4539,7 +4928,7 @@
 	)
 	(wire
 		(pts
-			(xy 215.9 118.11) (xy 228.6 118.11)
+			(xy 213.36 96.52) (xy 226.06 96.52)
 		)
 		(stroke
 			(width 0)
@@ -4589,7 +4978,7 @@
 	)
 	(wire
 		(pts
-			(xy 231.14 60.96) (xy 231.14 73.66)
+			(xy 229.87 45.72) (xy 229.87 58.42)
 		)
 		(stroke
 			(width 0)
@@ -4639,13 +5028,23 @@
 	)
 	(wire
 		(pts
-			(xy 245.11 60.96) (xy 245.11 76.2)
+			(xy 243.84 45.72) (xy 243.84 60.96)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "5706e186-6d82-4afa-9364-433f1bd68852")
+	)
+	(wire
+		(pts
+			(xy 222.25 137.16) (xy 224.79 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "58b1f90b-bc9c-4bbf-901b-eb6a944d7396")
 	)
 	(wire
 		(pts
@@ -4679,6 +5078,16 @@
 	)
 	(wire
 		(pts
+			(xy 187.96 144.78) (xy 189.23 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "61c24ab9-6ebf-4442-8567-4d1920e3f0a9")
+	)
+	(wire
+		(pts
 			(xy 69.85 71.12) (xy 69.85 81.28)
 		)
 		(stroke
@@ -4686,6 +5095,16 @@
 			(type default)
 		)
 		(uuid "66374f49-6ca3-4cb3-af08-23a2a6e4b2cd")
+	)
+	(wire
+		(pts
+			(xy 219.71 152.4) (xy 226.06 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "67be1f41-bbbd-44a1-81d8-ace55617b327")
 	)
 	(wire
 		(pts
@@ -4709,7 +5128,7 @@
 	)
 	(wire
 		(pts
-			(xy 205.74 68.58) (xy 190.5 68.58)
+			(xy 204.47 53.34) (xy 189.23 53.34)
 		)
 		(stroke
 			(width 0)
@@ -4729,13 +5148,23 @@
 	)
 	(wire
 		(pts
-			(xy 228.6 100.33) (xy 224.79 100.33)
+			(xy 226.06 78.74) (xy 222.25 78.74)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "70224711-55e5-4f85-9c2c-0e35d1ad67e5")
+	)
+	(wire
+		(pts
+			(xy 219.71 137.16) (xy 219.71 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "71104a27-bd57-4e47-b43e-daf460a5c69e")
 	)
 	(wire
 		(pts
@@ -4769,6 +5198,16 @@
 	)
 	(wire
 		(pts
+			(xy 222.25 153.67) (xy 222.25 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7b7864c7-b1ec-48e8-9e7f-b205bc50c27b")
+	)
+	(wire
+		(pts
 			(xy 58.42 158.75) (xy 58.42 154.94)
 		)
 		(stroke
@@ -4779,6 +5218,16 @@
 	)
 	(wire
 		(pts
+			(xy 198.12 138.43) (xy 198.12 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7ddb6b92-7cd7-4ce3-a359-f4aed38eefaf")
+	)
+	(wire
+		(pts
 			(xy 49.53 81.28) (xy 53.34 81.28)
 		)
 		(stroke
@@ -4786,6 +5235,16 @@
 			(type default)
 		)
 		(uuid "8254c946-7e38-4c74-ba69-3c1e39985509")
+	)
+	(wire
+		(pts
+			(xy 189.23 142.24) (xy 189.23 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "84008093-f0f6-4e77-b178-4843f098368e")
 	)
 	(wire
 		(pts
@@ -4809,7 +5268,7 @@
 	)
 	(wire
 		(pts
-			(xy 218.44 60.96) (xy 218.44 71.12)
+			(xy 217.17 45.72) (xy 217.17 55.88)
 		)
 		(stroke
 			(width 0)
@@ -4849,7 +5308,7 @@
 	)
 	(wire
 		(pts
-			(xy 205.74 43.18) (xy 205.74 44.45)
+			(xy 204.47 27.94) (xy 204.47 29.21)
 		)
 		(stroke
 			(width 0)
@@ -4859,7 +5318,7 @@
 	)
 	(wire
 		(pts
-			(xy 231.14 44.45) (xy 218.44 44.45)
+			(xy 229.87 29.21) (xy 217.17 29.21)
 		)
 		(stroke
 			(width 0)
@@ -4899,7 +5358,7 @@
 	)
 	(wire
 		(pts
-			(xy 205.74 44.45) (xy 205.74 45.72)
+			(xy 204.47 29.21) (xy 204.47 30.48)
 		)
 		(stroke
 			(width 0)
@@ -4939,13 +5398,13 @@
 	)
 	(wire
 		(pts
-			(xy 130.81 175.26) (xy 146.05 175.26)
+			(xy 100.33 175.26) (xy 107.95 175.26)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "9649b655-64d2-47ca-a0be-c0f0c15c06b8")
+		(uuid "97099dc2-ff92-4035-a3a7-f73afff589a7")
 	)
 	(wire
 		(pts
@@ -4959,13 +5418,33 @@
 	)
 	(wire
 		(pts
-			(xy 224.79 100.33) (xy 224.79 125.73)
+			(xy 203.2 153.67) (xy 222.25 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9ae7675d-218f-4ea5-a2a0-caaa89428f34")
+	)
+	(wire
+		(pts
+			(xy 222.25 78.74) (xy 222.25 104.14)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "9fbfd1c9-bd55-4c94-a5b2-3ec63a18a9a1")
+	)
+	(wire
+		(pts
+			(xy 189.23 144.78) (xy 189.23 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a20c40b2-d3cb-4ea7-b070-fcf07269bc22")
 	)
 	(wire
 		(pts
@@ -4999,13 +5478,13 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 175.26) (xy 97.79 175.26)
+			(xy 189.23 153.67) (xy 200.66 153.67)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "a3d9b84e-d00b-4f65-9afb-9396a7ee537e")
+		(uuid "a41dfe4b-a13c-4839-883c-ad9a5109eca7")
 	)
 	(wire
 		(pts
@@ -5019,7 +5498,7 @@
 	)
 	(wire
 		(pts
-			(xy 123.19 175.26) (xy 125.73 175.26)
+			(xy 123.19 175.26) (xy 130.81 175.26)
 		)
 		(stroke
 			(width 0)
@@ -5039,23 +5518,13 @@
 	)
 	(wire
 		(pts
-			(xy 205.74 60.96) (xy 205.74 68.58)
+			(xy 204.47 45.72) (xy 204.47 53.34)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "a6eaac29-e784-484b-9200-2db6c1bedf8f")
-	)
-	(wire
-		(pts
-			(xy 102.87 175.26) (xy 107.95 175.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "aae8fe68-637f-4d81-8d30-1c278e4ea5cc")
 	)
 	(wire
 		(pts
@@ -5159,6 +5628,16 @@
 	)
 	(wire
 		(pts
+			(xy 198.12 148.59) (xy 198.12 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bce78d82-ec2b-42bf-9c74-049283fed9eb")
+	)
+	(wire
+		(pts
 			(xy 54.61 66.04) (xy 53.34 66.04)
 		)
 		(stroke
@@ -5189,7 +5668,7 @@
 	)
 	(wire
 		(pts
-			(xy 257.81 78.74) (xy 190.5 78.74)
+			(xy 256.54 63.5) (xy 189.23 63.5)
 		)
 		(stroke
 			(width 0)
@@ -5299,6 +5778,16 @@
 	)
 	(wire
 		(pts
+			(xy 200.66 153.67) (xy 200.66 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cea26959-6253-4d4c-91a4-456f9dc9ea9f")
+	)
+	(wire
+		(pts
 			(xy 63.5 91.44) (xy 80.01 91.44)
 		)
 		(stroke
@@ -5329,7 +5818,7 @@
 	)
 	(wire
 		(pts
-			(xy 245.11 44.45) (xy 245.11 45.72)
+			(xy 243.84 29.21) (xy 243.84 30.48)
 		)
 		(stroke
 			(width 0)
@@ -5419,7 +5908,7 @@
 	)
 	(wire
 		(pts
-			(xy 231.14 44.45) (xy 231.14 45.72)
+			(xy 229.87 29.21) (xy 229.87 30.48)
 		)
 		(stroke
 			(width 0)
@@ -5436,6 +5925,16 @@
 			(type default)
 		)
 		(uuid "debc9f4c-173f-41ea-a005-9f03af16e32e")
+	)
+	(wire
+		(pts
+			(xy 203.2 148.59) (xy 203.2 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e0585f22-8f29-428e-9efc-c6227b2faa5d")
 	)
 	(wire
 		(pts
@@ -5459,7 +5958,7 @@
 	)
 	(wire
 		(pts
-			(xy 245.11 76.2) (xy 190.5 76.2)
+			(xy 243.84 60.96) (xy 189.23 60.96)
 		)
 		(stroke
 			(width 0)
@@ -5489,7 +5988,7 @@
 	)
 	(wire
 		(pts
-			(xy 215.9 107.95) (xy 228.6 107.95)
+			(xy 213.36 86.36) (xy 226.06 86.36)
 		)
 		(stroke
 			(width 0)
@@ -5529,7 +6028,7 @@
 	)
 	(wire
 		(pts
-			(xy 218.44 44.45) (xy 218.44 45.72)
+			(xy 217.17 29.21) (xy 217.17 30.48)
 		)
 		(stroke
 			(width 0)
@@ -5577,31 +6076,9 @@
 		)
 		(uuid "ff81ee17-e94a-4140-8e0f-d482936e4053")
 	)
-	(global_label "CH2_CAN_H"
-		(shape bidirectional)
-		(at 215.9 102.87 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "047b131e-7be8-4a46-84f1-3319c5c71069")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 201.0387 102.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "UART_USB_RX"
-		(shape bidirectional)
-		(at 127 58.42 0)
+	(global_label "UART_TX"
+		(shape input)
+		(at 127 55.88 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5609,9 +6086,9 @@
 			)
 			(justify left)
 		)
-		(uuid "13ac06e1-6111-49df-8bc3-6600e9c67f28")
+		(uuid "044e3746-9e58-4db6-b534-aebea57a2d4e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 143.9779 58.42 0)
+			(at 137.7866 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5621,9 +6098,31 @@
 			)
 		)
 	)
+	(global_label "CH2_CAN_H"
+		(shape bidirectional)
+		(at 213.36 81.28 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "047b131e-7be8-4a46-84f1-3319c5c71069")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 198.4987 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "CH1_CAN_H"
 		(shape bidirectional)
-		(at 215.9 113.03 180)
+		(at 213.36 91.44 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5633,7 +6132,7 @@
 		)
 		(uuid "170976e9-7ab7-41d0-8787-bde04a322ab2")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 201.0387 113.03 0)
+			(at 198.4987 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5661,28 +6160,6 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "UART_USB_TX"
-		(shape bidirectional)
-		(at 127 55.88 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "2418a10a-9e47-43b3-9961-d65f0c81517f")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 143.6755 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
 				(hide yes)
 			)
 		)
@@ -5777,7 +6254,7 @@
 	)
 	(global_label "V_IN"
 		(shape bidirectional)
-		(at 194.31 110.49 180)
+		(at 191.77 88.9 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5787,7 +6264,7 @@
 		)
 		(uuid "4f1b93f1-2296-41c0-8a73-b2295c3aba3d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 186.222 110.49 0)
+			(at 183.682 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5815,6 +6292,50 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "UART_USB_TX"
+		(shape bidirectional)
+		(at 226.06 152.4 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "5f2c4ccf-8cc2-4561-9bf8-28f0d5ca66e9")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 242.7355 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "UART_TX"
+		(shape bidirectional)
+		(at 187.96 142.24 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "61a66245-2d39-4fbd-83cc-ae8d91019064")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 176.0621 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -5863,9 +6384,9 @@
 			)
 		)
 	)
-	(global_label "UART_USB_RX"
+	(global_label "UART_RX"
 		(shape bidirectional)
-		(at 92.71 175.26 180)
+		(at 187.96 144.78 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5873,9 +6394,9 @@
 			)
 			(justify right)
 		)
-		(uuid "81b07449-f192-4c1c-8b63-53af080ced51")
+		(uuid "652cc39b-ebcf-4362-b38f-690182340bd6")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 75.7321 175.26 0)
+			(at 175.7597 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5907,9 +6428,53 @@
 			)
 		)
 	)
+	(global_label "VCP_UART_TX"
+		(shape input)
+		(at 130.81 175.26 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "927fadf4-6c6f-4fd2-91b6-01fdc4973b1e")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 146.1928 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "VCP_UART_RX"
+		(shape input)
+		(at 224.79 137.16 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "92964896-6f4e-4672-bc28-a6d8ab221b38")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 240.4752 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "LED5"
 		(shape bidirectional)
-		(at 190.5 78.74 180)
+		(at 189.23 63.5 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5919,7 +6484,7 @@
 		)
 		(uuid "92bee640-ab3a-4b0f-9636-e623368e3929")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 181.7469 78.74 0)
+			(at 180.4769 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5975,7 +6540,7 @@
 	)
 	(global_label "LED3"
 		(shape bidirectional)
-		(at 190.5 73.66 180)
+		(at 189.23 58.42 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5985,7 +6550,7 @@
 		)
 		(uuid "a7aeb43f-9e9a-4da4-b52f-e4189a000c84")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 181.7469 73.66 0)
+			(at 180.4769 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5997,7 +6562,7 @@
 	)
 	(global_label "CH2_CAN_L"
 		(shape bidirectional)
-		(at 215.9 107.95 180)
+		(at 213.36 86.36 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6007,7 +6572,7 @@
 		)
 		(uuid "a86c5494-6cfb-408e-894c-a3756c53307b")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 201.3411 107.95 0)
+			(at 198.8011 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6061,6 +6626,28 @@
 			)
 		)
 	)
+	(global_label "VCP_UART_TX"
+		(shape input)
+		(at 224.79 134.62 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "bd1c972d-a5a7-41d7-a7b5-84b72d828e38")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 240.1728 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "SPI1_MOSI"
 		(shape bidirectional)
 		(at 127 68.58 0)
@@ -6085,7 +6672,7 @@
 	)
 	(global_label "LED2"
 		(shape bidirectional)
-		(at 190.5 71.12 180)
+		(at 189.23 55.88 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6095,12 +6682,34 @@
 		)
 		(uuid "c6927494-960b-4b24-94d7-dcfea261b583")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 181.7469 71.12 0)
+			(at 180.4769 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "UART_RX"
+		(shape input)
+		(at 127 58.42 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "cbb1da97-3dca-4f6c-a63f-e26037334e1f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 138.089 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 				(hide yes)
 			)
 		)
@@ -6127,9 +6736,9 @@
 			)
 		)
 	)
-	(global_label "UART_USB_TX"
+	(global_label "UART_USB_RX"
 		(shape bidirectional)
-		(at 146.05 175.26 0)
+		(at 226.06 154.94 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6137,9 +6746,9 @@
 			)
 			(justify left)
 		)
-		(uuid "dae25ac7-0a36-4d67-a616-81b57a22404c")
+		(uuid "d9a5857e-6cef-4159-b35e-8f37a580f915")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 162.7255 175.26 0)
+			(at 243.0379 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6171,9 +6780,31 @@
 			)
 		)
 	)
+	(global_label "VCP_UART_RX"
+		(shape input)
+		(at 100.33 175.26 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "e8608863-7ae9-4d44-abc0-e373a481aab0")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 84.6448 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "LED4"
 		(shape bidirectional)
-		(at 190.5 76.2 180)
+		(at 189.23 60.96 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6183,7 +6814,7 @@
 		)
 		(uuid "ebf7388c-a074-49b2-ab49-1dd97175002b")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 181.7469 76.2 0)
+			(at 180.4769 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6283,7 +6914,7 @@
 	)
 	(global_label "CH1_CAN_L"
 		(shape bidirectional)
-		(at 215.9 118.11 180)
+		(at 213.36 96.52 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6293,7 +6924,7 @@
 		)
 		(uuid "f59c8486-34ed-4f83-a837-514ee5ebd026")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 201.3411 118.11 0)
+			(at 198.8011 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6305,7 +6936,7 @@
 	)
 	(global_label "LED1"
 		(shape bidirectional)
-		(at 190.5 68.58 180)
+		(at 189.23 53.34 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6315,7 +6946,7 @@
 		)
 		(uuid "f6b10f4b-bffd-4212-81f4-bfaab519de15")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 181.7469 68.58 0)
+			(at 180.4769 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6447,7 +7078,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C25804.pdf"
 			(at 69.85 102.87 0)
 			(effects
 				(font
@@ -6456,7 +7087,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor, small symbol"
+		(property "Description" "100mW 10kΩ 75V ±100ppm/℃ Thick Film Resistor ±1% 0603 Chip Resistor - Surface Mount RoHS"
 			(at 69.85 102.87 0)
 			(effects
 				(font
@@ -6483,6 +7114,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Pins" ""
+			(at 69.85 102.87 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "b346bd29-e3ae-4e4a-bcea-da1bfb7e4914")
 		)
@@ -6493,91 +7133,6 @@
 			(project "canlogger"
 				(path "/c59a6287-5b72-492b-aa01-526032899224/ab3add60-e83c-416c-8740-9e0bd2e9eebb"
 					(reference "R2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small")
-		(at 128.27 175.26 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp yes)
-		(uuid "12824332-5ddd-4081-b3b2-e14512b3718a")
-		(property "Reference" "R27"
-			(at 128.27 180.086 90)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-			)
-		)
-		(property "Value" "0"
-			(at 128.27 177.546 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "EasyEDA_Lib:R0603"
-			(at 128.27 175.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8578255895094087680"
-			(at 128.27 175.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "-55℃~+155℃ 0Ω 100mW 75V Thick Film Resistor ±1% 0603 Chip Resistor - Surface Mount ROHS"
-			(at 128.27 175.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supplier" "LCSC"
-			(at 128.27 175.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supplier Part" "C21189"
-			(at 128.27 175.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "75076089-7194-4188-b429-68412a5dee31")
-		)
-		(pin "2"
-			(uuid "0d63aee8-da69-4ab4-b4a1-76871a667eab")
-		)
-		(instances
-			(project "canlogger"
-				(path "/c59a6287-5b72-492b-aa01-526032899224/ab3add60-e83c-416c-8740-9e0bd2e9eebb"
-					(reference "R27")
 					(unit 1)
 				)
 			)
@@ -6650,93 +7205,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small")
-		(at 100.33 175.26 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp yes)
-		(uuid "218b82e0-9e34-4a20-87ac-2e63d03ed442")
-		(property "Reference" "R26"
-			(at 100.33 177.292 90)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-			)
-		)
-		(property "Value" "0"
-			(at 100.584 173.482 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "EasyEDA_Lib:R0603"
-			(at 100.33 175.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8578255895094087680"
-			(at 100.33 175.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "-55℃~+155℃ 0Ω 100mW 75V Thick Film Resistor ±1% 0603 Chip Resistor - Surface Mount ROHS"
-			(at 100.33 175.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supplier" "LCSC"
-			(at 100.33 175.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supplier Part" "C21189"
-			(at 100.33 175.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "26883444-edaa-4535-aafd-875e3d42d281")
-		)
-		(pin "2"
-			(uuid "fdf76b58-5263-4d5a-a8e8-0a585a834a27")
-		)
-		(instances
-			(project "canlogger"
-				(path "/c59a6287-5b72-492b-aa01-526032899224/ab3add60-e83c-416c-8740-9e0bd2e9eebb"
-					(reference "R26")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "EasyEDA_Lib:KT-0603R")
-		(at 218.44 55.88 90)
+		(at 217.17 40.64 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6745,7 +7215,7 @@
 		(fields_autoplaced yes)
 		(uuid "263933be-867c-4e96-9098-6c0ab5afef0e")
 		(property "Reference" "D18"
-			(at 222.25 55.8799 90)
+			(at 220.98 40.6399 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6754,7 +7224,7 @@
 			)
 		)
 		(property "Value" "~"
-			(at 222.25 58.4199 90)
+			(at 220.98 43.1799 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6763,7 +7233,7 @@
 			)
 		)
 		(property "Footprint" "EasyEDA_Lib:LED0603-RD"
-			(at 218.44 55.88 0)
+			(at 217.17 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6772,7 +7242,7 @@
 			)
 		)
 		(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20160616/1466072038404.pdf"
-			(at 218.44 55.88 0)
+			(at 217.17 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6781,7 +7251,7 @@
 			)
 		)
 		(property "Description" "Emitted Color:Red Power Dissipation:- Forward Current:- Dominant Wavelength:- Dominant Wavelength:- Peak Wavelength:- Diode Configuration:- Lens Color:- Color Temperature:- Color Temperature:- Viewing Angle:- Mounting Sytle:- Operating Temperature:-40°C~+8"
-			(at 218.44 55.88 0)
+			(at 217.17 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6790,7 +7260,7 @@
 			)
 		)
 		(property "Manufacturer Part" "KT-0603R"
-			(at 218.44 55.88 0)
+			(at 217.17 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6799,7 +7269,7 @@
 			)
 		)
 		(property "Manufacturer" "KENTO"
-			(at 218.44 55.88 0)
+			(at 217.17 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6808,7 +7278,7 @@
 			)
 		)
 		(property "Supplier Part" "C2286"
-			(at 218.44 55.88 0)
+			(at 217.17 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6817,7 +7287,7 @@
 			)
 		)
 		(property "Supplier" "LCSC"
-			(at 218.44 55.88 0)
+			(at 217.17 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6826,7 +7296,16 @@
 			)
 		)
 		(property "LCSC Part Name" "0603 红灯 高亮"
-			(at 218.44 55.88 0)
+			(at 217.17 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 217.17 40.64 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6941,6 +7420,15 @@
 			)
 		)
 		(property "LCSC Part Name" "STM32G474CBT6"
+			(at 97.79 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
 			(at 97.79 83.82 0)
 			(effects
 				(font
@@ -7104,7 +7592,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 245.11 48.26 0)
+		(at 243.84 33.02 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7113,7 +7601,7 @@
 		(fields_autoplaced yes)
 		(uuid "2b1870d2-517c-4a85-a905-721bd43a7ce5")
 		(property "Reference" "R25"
-			(at 247.65 46.9899 0)
+			(at 246.38 31.7499 0)
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -7121,8 +7609,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "330"
-			(at 247.65 49.5299 0)
+		(property "Value" "5k1"
+			(at 246.38 34.2899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7131,7 +7619,7 @@
 			)
 		)
 		(property "Footprint" "EasyEDA_Lib:R0603"
-			(at 245.11 48.26 0)
+			(at 243.84 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7139,8 +7627,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579706223213461504"
-			(at 245.11 48.26 0)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C23186.pdf"
+			(at 243.84 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7148,8 +7636,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "-55℃~+155℃ 100mW 330Ω 75V Thick Film Resistor ±1% ±100ppm/℃ 0603 Chip Resistor - Surface Mount ROHS"
-			(at 245.11 48.26 0)
+		(property "Description" "100mW 5.1kΩ 75V ±100ppm/℃ Thick Film Resistor ±1% 0603 Chip Resistor - Surface Mount RoHS"
+			(at 243.84 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7158,7 +7646,7 @@
 			)
 		)
 		(property "Supplier" "LCSC"
-			(at 245.11 48.26 0)
+			(at 243.84 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7166,8 +7654,17 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Part" "C23138"
-			(at 245.11 48.26 0)
+		(property "Supplier Part" "C23186"
+			(at 243.84 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 243.84 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7280,6 +7777,15 @@
 			)
 		)
 		(property "LCSC Part Name" "2x7P 间距:1.27mm 方针 立贴"
+			(at 115.57 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
 			(at 115.57 167.64 0)
 			(effects
 				(font
@@ -7404,6 +7910,15 @@
 			)
 		)
 		(property "Supplier Part" "C15850"
+			(at 152.4 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
 			(at 152.4 31.75 0)
 			(effects
 				(font
@@ -7628,7 +8143,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 231.14 48.26 0)
+		(at 229.87 33.02 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7637,7 +8152,7 @@
 		(fields_autoplaced yes)
 		(uuid "57ee9017-8c54-4304-9429-973befd42402")
 		(property "Reference" "R24"
-			(at 233.68 46.9899 0)
+			(at 232.41 31.7499 0)
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -7645,8 +8160,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "330"
-			(at 233.68 49.5299 0)
+		(property "Value" "5k1"
+			(at 232.41 34.2899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7655,7 +8170,7 @@
 			)
 		)
 		(property "Footprint" "EasyEDA_Lib:R0603"
-			(at 231.14 48.26 0)
+			(at 229.87 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7663,8 +8178,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579706223213461504"
-			(at 231.14 48.26 0)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C23186.pdf"
+			(at 229.87 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7672,8 +8187,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "-55℃~+155℃ 100mW 330Ω 75V Thick Film Resistor ±1% ±100ppm/℃ 0603 Chip Resistor - Surface Mount ROHS"
-			(at 231.14 48.26 0)
+		(property "Description" "100mW 5.1kΩ 75V ±100ppm/℃ Thick Film Resistor ±1% 0603 Chip Resistor - Surface Mount RoHS"
+			(at 229.87 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7682,7 +8197,7 @@
 			)
 		)
 		(property "Supplier" "LCSC"
-			(at 231.14 48.26 0)
+			(at 229.87 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7690,8 +8205,17 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Part" "C23138"
-			(at 231.14 48.26 0)
+		(property "Supplier Part" "C23186"
+			(at 229.87 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 229.87 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7716,7 +8240,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 257.81 48.26 0)
+		(at 256.54 33.02 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7725,7 +8249,7 @@
 		(fields_autoplaced yes)
 		(uuid "599caaa9-a5f8-4dbf-9be6-87a92866bc2f")
 		(property "Reference" "R21"
-			(at 260.35 46.9899 0)
+			(at 259.08 31.7499 0)
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -7733,8 +8257,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "330"
-			(at 260.35 49.5299 0)
+		(property "Value" "5k1"
+			(at 259.08 34.2899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7743,7 +8267,7 @@
 			)
 		)
 		(property "Footprint" "EasyEDA_Lib:R0603"
-			(at 257.81 48.26 0)
+			(at 256.54 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7751,8 +8275,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579706223213461504"
-			(at 257.81 48.26 0)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C23186.pdf"
+			(at 256.54 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7760,8 +8284,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "-55℃~+155℃ 100mW 330Ω 75V Thick Film Resistor ±1% ±100ppm/℃ 0603 Chip Resistor - Surface Mount ROHS"
-			(at 257.81 48.26 0)
+		(property "Description" "100mW 5.1kΩ 75V ±100ppm/℃ Thick Film Resistor ±1% 0603 Chip Resistor - Surface Mount RoHS"
+			(at 256.54 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7770,7 +8294,7 @@
 			)
 		)
 		(property "Supplier" "LCSC"
-			(at 257.81 48.26 0)
+			(at 256.54 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7778,8 +8302,17 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Part" "C23138"
-			(at 257.81 48.26 0)
+		(property "Supplier Part" "C23186"
+			(at 256.54 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 256.54 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7839,7 +8372,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C25804.pdf"
 			(at 39.37 45.72 0)
 			(effects
 				(font
@@ -7848,7 +8381,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor, small symbol"
+		(property "Description" "100mW 10kΩ 75V ±100ppm/℃ Thick Film Resistor ±1% 0603 Chip Resistor - Surface Mount RoHS"
 			(at 39.37 45.72 0)
 			(effects
 				(font
@@ -7875,6 +8408,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Pins" ""
+			(at 39.37 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "4fa6cf97-599b-4439-bef3-e1848e282640")
 		)
@@ -7892,7 +8434,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 218.44 48.26 0)
+		(at 217.17 33.02 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7901,7 +8443,7 @@
 		(fields_autoplaced yes)
 		(uuid "68fe7911-c4e9-4bc2-9446-8665aab9c629")
 		(property "Reference" "R23"
-			(at 220.98 46.9899 0)
+			(at 219.71 31.7499 0)
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -7909,8 +8451,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "330"
-			(at 220.98 49.5299 0)
+		(property "Value" "5k1"
+			(at 219.71 34.2899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7919,7 +8461,7 @@
 			)
 		)
 		(property "Footprint" "EasyEDA_Lib:R0603"
-			(at 218.44 48.26 0)
+			(at 217.17 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7927,8 +8469,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579706223213461504"
-			(at 218.44 48.26 0)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C23186.pdf"
+			(at 217.17 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7936,8 +8478,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "-55℃~+155℃ 100mW 330Ω 75V Thick Film Resistor ±1% ±100ppm/℃ 0603 Chip Resistor - Surface Mount ROHS"
-			(at 218.44 48.26 0)
+		(property "Description" "100mW 5.1kΩ 75V ±100ppm/℃ Thick Film Resistor ±1% 0603 Chip Resistor - Surface Mount RoHS"
+			(at 217.17 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7946,7 +8488,7 @@
 			)
 		)
 		(property "Supplier" "LCSC"
-			(at 218.44 48.26 0)
+			(at 217.17 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7954,8 +8496,17 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Part" "C23138"
-			(at 218.44 48.26 0)
+		(property "Supplier Part" "C23186"
+			(at 217.17 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 217.17 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7980,7 +8531,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 224.79 125.73 0)
+		(at 222.25 104.14 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7988,7 +8539,7 @@
 		(dnp no)
 		(uuid "6b3eb2a2-e177-45e1-b592-f38427716cad")
 		(property "Reference" "#PWR064"
-			(at 224.79 132.08 0)
+			(at 222.25 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7997,7 +8548,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 220.98 127.254 0)
+			(at 218.44 105.664 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8006,7 +8557,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 224.79 125.73 0)
+			(at 222.25 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8015,7 +8566,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 224.79 125.73 0)
+			(at 222.25 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8024,7 +8575,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 224.79 125.73 0)
+			(at 222.25 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8046,7 +8597,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole")
-		(at 201.93 149.86 0)
+		(at 259.08 149.86 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -8055,7 +8606,7 @@
 		(fields_autoplaced yes)
 		(uuid "6b484ae0-e0fe-44c2-a01e-191c5289ca7d")
 		(property "Reference" "H3"
-			(at 204.47 148.5899 0)
+			(at 261.62 148.5899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8064,7 +8615,7 @@
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 204.47 151.1299 0)
+			(at 261.62 151.1299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8073,7 +8624,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_2.7mm_M2.5_Pad_TopBottom"
-			(at 201.93 149.86 0)
+			(at 259.08 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8082,7 +8633,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 201.93 149.86 0)
+			(at 259.08 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8091,7 +8642,16 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
-			(at 201.93 149.86 0)
+			(at 259.08 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 259.08 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8110,7 +8670,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole")
-		(at 201.93 156.21 0)
+		(at 259.08 156.21 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -8119,7 +8679,7 @@
 		(fields_autoplaced yes)
 		(uuid "6e131160-8c13-4bba-8428-1aef196cba7a")
 		(property "Reference" "H4"
-			(at 204.47 154.9399 0)
+			(at 261.62 154.9399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8128,7 +8688,7 @@
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 204.47 157.4799 0)
+			(at 261.62 157.4799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8137,7 +8697,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_2.7mm_M2.5_Pad_TopBottom"
-			(at 201.93 156.21 0)
+			(at 259.08 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8146,7 +8706,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 201.93 156.21 0)
+			(at 259.08 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8155,7 +8715,16 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
-			(at 201.93 156.21 0)
+			(at 259.08 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 259.08 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8174,7 +8743,7 @@
 	)
 	(symbol
 		(lib_id "EasyEDA_Lib:KT-0603R")
-		(at 257.81 55.88 90)
+		(at 256.54 40.64 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8183,7 +8752,7 @@
 		(fields_autoplaced yes)
 		(uuid "79b277e7-6e8b-4268-b9f5-22a0529952ca")
 		(property "Reference" "D20"
-			(at 261.62 55.8799 90)
+			(at 260.35 40.6399 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8192,7 +8761,7 @@
 			)
 		)
 		(property "Value" "~"
-			(at 261.62 58.4199 90)
+			(at 260.35 43.1799 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8201,7 +8770,7 @@
 			)
 		)
 		(property "Footprint" "EasyEDA_Lib:LED0603-RD"
-			(at 257.81 55.88 0)
+			(at 256.54 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8210,7 +8779,7 @@
 			)
 		)
 		(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20160616/1466072038404.pdf"
-			(at 257.81 55.88 0)
+			(at 256.54 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8219,7 +8788,7 @@
 			)
 		)
 		(property "Description" "Emitted Color:Red Power Dissipation:- Forward Current:- Dominant Wavelength:- Dominant Wavelength:- Peak Wavelength:- Diode Configuration:- Lens Color:- Color Temperature:- Color Temperature:- Viewing Angle:- Mounting Sytle:- Operating Temperature:-40°C~+8"
-			(at 257.81 55.88 0)
+			(at 256.54 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8228,7 +8797,7 @@
 			)
 		)
 		(property "Manufacturer Part" "KT-0603R"
-			(at 257.81 55.88 0)
+			(at 256.54 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8237,7 +8806,7 @@
 			)
 		)
 		(property "Manufacturer" "KENTO"
-			(at 257.81 55.88 0)
+			(at 256.54 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8246,7 +8815,7 @@
 			)
 		)
 		(property "Supplier Part" "C2286"
-			(at 257.81 55.88 0)
+			(at 256.54 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8255,7 +8824,7 @@
 			)
 		)
 		(property "Supplier" "LCSC"
-			(at 257.81 55.88 0)
+			(at 256.54 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8264,7 +8833,16 @@
 			)
 		)
 		(property "LCSC Part Name" "0603 红灯 高亮"
-			(at 257.81 55.88 0)
+			(at 256.54 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 256.54 40.64 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8384,6 +8962,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Pins" ""
+			(at 53.34 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "cb5b8449-72b6-4ce5-9e47-ca2797a82f6a")
 		)
@@ -8407,7 +8994,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 205.74 43.18 0)
+		(at 204.47 27.94 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8416,7 +9003,7 @@
 		(fields_autoplaced yes)
 		(uuid "7da043f2-88de-430a-bcd3-3d084a84b689")
 		(property "Reference" "#PWR07"
-			(at 205.74 46.99 0)
+			(at 204.47 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8425,7 +9012,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 205.74 38.1 0)
+			(at 204.47 22.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8433,7 +9020,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 205.74 43.18 0)
+			(at 204.47 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8442,7 +9029,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 205.74 43.18 0)
+			(at 204.47 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8451,7 +9038,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 205.74 43.18 0)
+			(at 204.47 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8540,7 +9127,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole")
-		(at 201.93 142.24 0)
+		(at 259.08 142.24 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -8549,7 +9136,7 @@
 		(fields_autoplaced yes)
 		(uuid "88286c76-1542-49d2-996a-32be30bd3e48")
 		(property "Reference" "H2"
-			(at 204.47 140.9699 0)
+			(at 261.62 140.9699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8558,7 +9145,7 @@
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 204.47 143.5099 0)
+			(at 261.62 143.5099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8567,7 +9154,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_2.7mm_M2.5_Pad_TopBottom"
-			(at 201.93 142.24 0)
+			(at 259.08 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8576,7 +9163,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 201.93 142.24 0)
+			(at 259.08 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8585,7 +9172,16 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
-			(at 201.93 142.24 0)
+			(at 259.08 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 259.08 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8734,6 +9330,15 @@
 			)
 		)
 		(property "Supplier Part" "C14663"
+			(at 119.38 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
 			(at 119.38 31.75 0)
 			(effects
 				(font
@@ -8923,6 +9528,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Pins" ""
+			(at 49.53 45.72 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "3ae62be4-4ecc-4409-ae3c-6a6ec7622e4a")
 		)
@@ -9006,7 +9620,7 @@
 	)
 	(symbol
 		(lib_id "EasyEDA_Lib:KT-0603R")
-		(at 205.74 55.88 90)
+		(at 204.47 40.64 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9015,7 +9629,7 @@
 		(fields_autoplaced yes)
 		(uuid "b612db29-6b15-4368-89ac-d8140d586037")
 		(property "Reference" "D17"
-			(at 209.55 55.8799 90)
+			(at 208.28 40.6399 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9024,7 +9638,7 @@
 			)
 		)
 		(property "Value" "~"
-			(at 209.55 58.4199 90)
+			(at 208.28 43.1799 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9033,7 +9647,7 @@
 			)
 		)
 		(property "Footprint" "EasyEDA_Lib:LED0603-RD"
-			(at 205.74 55.88 0)
+			(at 204.47 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9042,7 +9656,7 @@
 			)
 		)
 		(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20160616/1466072038404.pdf"
-			(at 205.74 55.88 0)
+			(at 204.47 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9051,7 +9665,7 @@
 			)
 		)
 		(property "Description" "Emitted Color:Red Power Dissipation:- Forward Current:- Dominant Wavelength:- Dominant Wavelength:- Peak Wavelength:- Diode Configuration:- Lens Color:- Color Temperature:- Color Temperature:- Viewing Angle:- Mounting Sytle:- Operating Temperature:-40°C~+8"
-			(at 205.74 55.88 0)
+			(at 204.47 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9060,7 +9674,7 @@
 			)
 		)
 		(property "Manufacturer Part" "KT-0603R"
-			(at 205.74 55.88 0)
+			(at 204.47 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9069,7 +9683,7 @@
 			)
 		)
 		(property "Manufacturer" "KENTO"
-			(at 205.74 55.88 0)
+			(at 204.47 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9078,7 +9692,7 @@
 			)
 		)
 		(property "Supplier Part" "C2286"
-			(at 205.74 55.88 0)
+			(at 204.47 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9087,7 +9701,7 @@
 			)
 		)
 		(property "Supplier" "LCSC"
-			(at 205.74 55.88 0)
+			(at 204.47 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9096,7 +9710,16 @@
 			)
 		)
 		(property "LCSC Part Name" "0603 红灯 高亮"
-			(at 205.74 55.88 0)
+			(at 204.47 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 204.47 40.64 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9192,6 +9815,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Pins" ""
+			(at 107.95 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "5bf6ca0e-2805-450c-864b-1c789f31ec32")
 		)
@@ -9271,6 +9903,15 @@
 			)
 		)
 		(property "Supplier Part" "C14663"
+			(at 39.37 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
 			(at 39.37 58.42 0)
 			(effects
 				(font
@@ -9367,6 +10008,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Pins" ""
+			(at 140.97 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "8cd506df-83c0-4bee-bef1-c160dd37a75d")
 		)
@@ -9455,6 +10105,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Pins" ""
+			(at 129.54 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "e6b2386d-1877-42bc-b338-e1e405af9d93")
 		)
@@ -9472,7 +10131,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 205.74 48.26 0)
+		(at 204.47 33.02 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9481,7 +10140,7 @@
 		(fields_autoplaced yes)
 		(uuid "c5245ccc-1984-45d2-be08-617321f0bb29")
 		(property "Reference" "R22"
-			(at 208.28 46.9899 0)
+			(at 207.01 31.7499 0)
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -9489,8 +10148,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "330"
-			(at 208.28 49.5299 0)
+		(property "Value" "5k1"
+			(at 207.01 34.2899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9499,7 +10158,7 @@
 			)
 		)
 		(property "Footprint" "EasyEDA_Lib:R0603"
-			(at 205.74 48.26 0)
+			(at 204.47 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9507,8 +10166,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579706223213461504"
-			(at 205.74 48.26 0)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C23186.pdf"
+			(at 204.47 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9516,8 +10175,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "-55℃~+155℃ 100mW 330Ω 75V Thick Film Resistor ±1% ±100ppm/℃ 0603 Chip Resistor - Surface Mount ROHS"
-			(at 205.74 48.26 0)
+		(property "Description" "100mW 5.1kΩ 75V ±100ppm/℃ Thick Film Resistor ±1% 0603 Chip Resistor - Surface Mount RoHS"
+			(at 204.47 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9526,7 +10185,7 @@
 			)
 		)
 		(property "Supplier" "LCSC"
-			(at 205.74 48.26 0)
+			(at 204.47 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9534,8 +10193,17 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Part" "C23138"
-			(at 205.74 48.26 0)
+		(property "Supplier Part" "C23186"
+			(at 204.47 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 204.47 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9553,6 +10221,142 @@
 			(project "canlogger"
 				(path "/c59a6287-5b72-492b-aa01-526032899224/ab3add60-e83c-416c-8740-9e0bd2e9eebb"
 					(reference "R22")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "EasyEDA_Lib:DZ127S-22-06-55")
+		(at 200.66 143.51 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c6ebc42f-96dc-415f-bec1-e8b8585ae918")
+		(property "Reference" "J3"
+			(at 207.01 142.2399 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "3x2p, 1.27"
+			(at 207.01 144.7799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "canlogger_custom_lib:HDR-SMD_6P-P1.27-V-M-R2-C3-S1.27-LS5.5-1"
+			(at 200.66 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://item.szlcsc.com/datasheet/DZ127S-22-06-55/5807855.html"
+			(at 200.66 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Pin Structure:2x3P Pitch:1.27mm Circluar Pins/Square Pins:Pin Header Mounting Type:Surface Mount,Vertical Number of Rows:2 Number of Pins:6P Current Rating:1A Length of Mating Pin:3.5mm Insulation Height:1.5mm Contact Material:Brass Contact Plating:Gold C"
+			(at 200.66 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part" "DZ127S-22-06-55"
+			(at 200.66 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "DEALON(德艺隆)"
+			(at 200.66 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier Part" "C5160759"
+			(at 200.66 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier" "LCSC"
+			(at 200.66 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part Name" "2x3P 间距:1.27mm 方针 立贴"
+			(at 200.66 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 200.66 143.51 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "5"
+			(uuid "24a81c2d-605a-4887-bd76-e5be24f683d8")
+		)
+		(pin "3"
+			(uuid "c86000c8-8619-4d51-94cb-54ac7a241a86")
+		)
+		(pin "2"
+			(uuid "12b9a8c4-5d0a-40f3-8ca8-93271b591cad")
+		)
+		(pin "4"
+			(uuid "91eee651-7ff7-4c91-a82f-64a8dac33a3d")
+		)
+		(pin "6"
+			(uuid "2dbc0e83-4390-4e2a-acfa-4a9574f9ffa6")
+		)
+		(pin "1"
+			(uuid "9bdc5ce3-9759-4424-b1ab-2b6cea749fe2")
+		)
+		(instances
+			(project "canlogger"
+				(path "/c59a6287-5b72-492b-aa01-526032899224/ab3add60-e83c-416c-8740-9e0bd2e9eebb"
+					(reference "J3")
 					(unit 1)
 				)
 			)
@@ -9655,6 +10459,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Pins" ""
+			(at 62.23 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "19a5a138-1ba0-4692-8a8e-a8e4daf73cf3")
 		)
@@ -9740,6 +10553,15 @@
 			)
 		)
 		(property "Supplier Part" "C1647"
+			(at 49.53 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
 			(at 49.53 76.2 0)
 			(effects
 				(font
@@ -9901,6 +10723,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Pins" ""
+			(at 74.93 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "6a530a8f-dbaf-4d5d-a762-262af98b906f")
 		)
@@ -9918,7 +10749,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole")
-		(at 201.93 134.62 0)
+		(at 259.08 134.62 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -9927,7 +10758,7 @@
 		(fields_autoplaced yes)
 		(uuid "dc2668ae-eecd-4374-a928-77668547e15d")
 		(property "Reference" "H1"
-			(at 204.47 133.3499 0)
+			(at 261.62 133.3499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9936,7 +10767,7 @@
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 204.47 135.8899 0)
+			(at 261.62 135.8899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9945,7 +10776,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_2.7mm_M2.5_Pad_TopBottom"
-			(at 201.93 134.62 0)
+			(at 259.08 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9954,7 +10785,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 201.93 134.62 0)
+			(at 259.08 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9963,7 +10794,16 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
-			(at 201.93 134.62 0)
+			(at 259.08 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 259.08 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9982,7 +10822,7 @@
 	)
 	(symbol
 		(lib_id "EasyEDA_Lib:KT-0603R")
-		(at 231.14 55.88 90)
+		(at 229.87 40.64 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9991,7 +10831,7 @@
 		(fields_autoplaced yes)
 		(uuid "dc93a56a-7318-4812-9181-71da75b41595")
 		(property "Reference" "D19"
-			(at 234.95 55.8799 90)
+			(at 233.68 40.6399 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10000,7 +10840,7 @@
 			)
 		)
 		(property "Value" "~"
-			(at 234.95 58.4199 90)
+			(at 233.68 43.1799 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10009,7 +10849,7 @@
 			)
 		)
 		(property "Footprint" "EasyEDA_Lib:LED0603-RD"
-			(at 231.14 55.88 0)
+			(at 229.87 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10018,7 +10858,7 @@
 			)
 		)
 		(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20160616/1466072038404.pdf"
-			(at 231.14 55.88 0)
+			(at 229.87 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10027,7 +10867,7 @@
 			)
 		)
 		(property "Description" "Emitted Color:Red Power Dissipation:- Forward Current:- Dominant Wavelength:- Dominant Wavelength:- Peak Wavelength:- Diode Configuration:- Lens Color:- Color Temperature:- Color Temperature:- Viewing Angle:- Mounting Sytle:- Operating Temperature:-40°C~+8"
-			(at 231.14 55.88 0)
+			(at 229.87 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10036,7 +10876,7 @@
 			)
 		)
 		(property "Manufacturer Part" "KT-0603R"
-			(at 231.14 55.88 0)
+			(at 229.87 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10045,7 +10885,7 @@
 			)
 		)
 		(property "Manufacturer" "KENTO"
-			(at 231.14 55.88 0)
+			(at 229.87 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10054,7 +10894,7 @@
 			)
 		)
 		(property "Supplier Part" "C2286"
-			(at 231.14 55.88 0)
+			(at 229.87 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10063,7 +10903,7 @@
 			)
 		)
 		(property "Supplier" "LCSC"
-			(at 231.14 55.88 0)
+			(at 229.87 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10072,7 +10912,16 @@
 			)
 		)
 		(property "LCSC Part Name" "0603 红灯 高亮"
-			(at 231.14 55.88 0)
+			(at 229.87 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 229.87 40.64 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10097,7 +10946,7 @@
 	)
 	(symbol
 		(lib_id "EasyEDA_Lib:KT-0603R")
-		(at 245.11 55.88 90)
+		(at 243.84 40.64 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10106,7 +10955,7 @@
 		(fields_autoplaced yes)
 		(uuid "e34e4346-59ed-4edc-bb60-bd54eb8a5b21")
 		(property "Reference" "D21"
-			(at 248.92 55.8799 90)
+			(at 247.65 40.6399 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10115,7 +10964,7 @@
 			)
 		)
 		(property "Value" "~"
-			(at 248.92 58.4199 90)
+			(at 247.65 43.1799 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10124,7 +10973,7 @@
 			)
 		)
 		(property "Footprint" "EasyEDA_Lib:LED0603-RD"
-			(at 245.11 55.88 0)
+			(at 243.84 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10133,7 +10982,7 @@
 			)
 		)
 		(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20160616/1466072038404.pdf"
-			(at 245.11 55.88 0)
+			(at 243.84 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10142,7 +10991,7 @@
 			)
 		)
 		(property "Description" "Emitted Color:Red Power Dissipation:- Forward Current:- Dominant Wavelength:- Dominant Wavelength:- Peak Wavelength:- Diode Configuration:- Lens Color:- Color Temperature:- Color Temperature:- Viewing Angle:- Mounting Sytle:- Operating Temperature:-40°C~+8"
-			(at 245.11 55.88 0)
+			(at 243.84 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10151,7 +11000,7 @@
 			)
 		)
 		(property "Manufacturer Part" "KT-0603R"
-			(at 245.11 55.88 0)
+			(at 243.84 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10160,7 +11009,7 @@
 			)
 		)
 		(property "Manufacturer" "KENTO"
-			(at 245.11 55.88 0)
+			(at 243.84 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10169,7 +11018,7 @@
 			)
 		)
 		(property "Supplier Part" "C2286"
-			(at 245.11 55.88 0)
+			(at 243.84 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10178,7 +11027,7 @@
 			)
 		)
 		(property "Supplier" "LCSC"
-			(at 245.11 55.88 0)
+			(at 243.84 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10187,7 +11036,16 @@
 			)
 		)
 		(property "LCSC Part Name" "0603 红灯 高亮"
-			(at 245.11 55.88 0)
+			(at 243.84 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 243.84 40.64 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10211,8 +11069,90 @@
 		)
 	)
 	(symbol
+		(lib_id "canlogger_custom_lib:Jumper_Shunt")
+		(at 185.42 124.46 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board no)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e4d49145-8bf8-4ef8-8c18-8c59b56c0547")
+		(property "Reference" "H5"
+			(at 187.96 123.6979 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "2p, 1.27"
+			(at 187.96 126.2379 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 184.658 123.698 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C150949.pdf"
+			(at 185.42 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Jumper, shunt"
+			(at 185.42 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part Name" "C150949"
+			(at 185.42 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 185.42 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project ""
+				(path "/c59a6287-5b72-492b-aa01-526032899224/ab3add60-e83c-416c-8740-9e0bd2e9eebb"
+					(reference "H5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:DE9_Pins")
-		(at 236.22 110.49 0)
+		(at 233.68 88.9 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10221,7 +11161,7 @@
 		(fields_autoplaced yes)
 		(uuid "ee681353-2605-440e-8011-e5d6104db4f6")
 		(property "Reference" "J1"
-			(at 241.3 109.2199 0)
+			(at 238.76 87.6299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10230,7 +11170,7 @@
 			)
 		)
 		(property "Value" "DE9_Pins_MountingHoles"
-			(at 241.3 111.7599 0)
+			(at 238.76 90.1699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10239,7 +11179,7 @@
 			)
 		)
 		(property "Footprint" "canlogger_custom_lib:DSUB-9_Pins_EdgeMount_P2.77mm"
-			(at 236.22 110.49 0)
+			(at 233.68 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10248,7 +11188,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 236.22 110.49 0)
+			(at 233.68 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10257,7 +11197,7 @@
 			)
 		)
 		(property "Description" "9-pin D-SUB connector, pins (male)"
-			(at 236.22 110.49 0)
+			(at 233.68 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10266,7 +11206,7 @@
 			)
 		)
 		(property "Supplier" "LCSC"
-			(at 236.22 110.49 0)
+			(at 233.68 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10275,7 +11215,16 @@
 			)
 		)
 		(property "Supplier Part" "C75752"
-			(at 236.22 110.49 0)
+			(at 233.68 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 233.68 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10314,6 +11263,88 @@
 			(project ""
 				(path "/c59a6287-5b72-492b-aa01-526032899224/ab3add60-e83c-416c-8740-9e0bd2e9eebb"
 					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "canlogger_custom_lib:Jumper_Shunt")
+		(at 200.66 124.46 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board no)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f2f4c691-4c7d-452d-9eed-7fe5156b4f5f")
+		(property "Reference" "H6"
+			(at 203.2 123.6979 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "2p, 1.27"
+			(at 203.2 126.2379 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 199.898 123.698 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C150949.pdf"
+			(at 200.66 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Jumper, shunt"
+			(at 200.66 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part Name" "C150949"
+			(at 200.66 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 200.66 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "canlogger"
+				(path "/c59a6287-5b72-492b-aa01-526032899224/ab3add60-e83c-416c-8740-9e0bd2e9eebb"
+					(reference "H6")
 					(unit 1)
 				)
 			)

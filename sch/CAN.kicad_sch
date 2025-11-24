@@ -5,10 +5,173 @@
 	(uuid "bf53bb3c-3d2d-4a46-968f-39e72e9a4d8b")
 	(paper "A4")
 	(title_block
-		(title "2CH CAN  Logger")
-		(rev "1.0")
+		(title "Dual Channel CAN Logger")
+		(rev "1.1")
 	)
 	(lib_symbols
+		(symbol "Connector:Conn_01x02_Pin"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x02_Pin"
+				(at 0 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x02, script generated"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Conn_01x02_Pin_1_1"
+				(rectangle
+					(start 0.8636 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 0.8636 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy 0.8636 0)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -2.54) (xy 0.8636 -2.54)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -2.54 180)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:C_Small"
 			(pin_numbers
 				(hide yes)
@@ -1148,27 +1311,20 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Jumper:SolderJumper_2_Open"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
+		(symbol "canlogger_custom_lib:Jumper_Shunt"
 			(exclude_from_sim no)
-			(in_bom no)
-			(on_board yes)
-			(property "Reference" "JP"
-				(at 0 2.032 0)
+			(in_bom yes)
+			(on_board no)
+			(property "Reference" "H"
+				(at -1.778 2.286 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" "SolderJumper_2_Open"
-				(at 0 -2.54 0)
+			(property "Value" "Jumper_Shunt"
+				(at 0 -3.302 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1176,7 +1332,7 @@
 				)
 			)
 			(property "Footprint" ""
-				(at 0 0 0)
+				(at -0.762 0.762 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1185,6 +1341,24 @@
 				)
 			)
 			(property "Datasheet" "~"
+				(at 0 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Jumper, shunt"
+				(at 0 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "jumper shunt "
 				(at 0 0 0)
 				(effects
 					(font
@@ -1193,142 +1367,38 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Solder Jumper, 2-pole, open"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "solder jumper SPST"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "SolderJumper*Open*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "SolderJumper_2_Open_0_1"
-				(polyline
-					(pts
-						(xy -0.254 1.016) (xy -0.254 -1.016)
-					)
+			(symbol "Jumper_Shunt_1_1"
+				(rectangle
+					(start -1.27 1.27)
+					(end 1.27 -1.27)
 					(stroke
 						(width 0)
-						(type default)
+						(type solid)
 					)
 					(fill
-						(type none)
+						(type background)
 					)
 				)
-				(arc
-					(start -0.254 -1.016)
-					(mid -1.2656 0)
-					(end -0.254 1.016)
+				(rectangle
+					(start -1.27 -1.778)
+					(end 1.27 -2.286)
 					(stroke
 						(width 0)
-						(type default)
+						(type solid)
 					)
 					(fill
-						(type none)
+						(type background)
 					)
 				)
-				(arc
-					(start -0.254 -1.016)
-					(mid -1.2656 0)
-					(end -0.254 1.016)
+				(rectangle
+					(start -1.016 -1.27)
+					(end 1.016 -1.778)
 					(stroke
 						(width 0)
-						(type default)
+						(type solid)
 					)
 					(fill
-						(type outline)
-					)
-				)
-				(arc
-					(start 0.254 1.016)
-					(mid 1.2656 0)
-					(end 0.254 -1.016)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0.254 1.016)
-					(mid 1.2656 0)
-					(end 0.254 -1.016)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.254 1.016) (xy 0.254 -1.016)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "SolderJumper_2_Open_1_1"
-				(pin passive line
-					(at -3.81 0 0)
-					(length 2.54)
-					(name "A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 3.81 0 180)
-					(length 2.54)
-					(name "B"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
+						(type background)
 					)
 				)
 			)
@@ -1757,28 +1827,28 @@
 		(uuid "df972cc4-75de-4192-a6db-c8d16779c1f0")
 	)
 	(junction
+		(at 201.93 106.68)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "00122893-dd5d-4c1b-8679-d5fc76159811")
+	)
+	(junction
 		(at 171.45 106.68)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "085dba13-0d03-4bc3-a030-f2e28b2f617d")
 	)
 	(junction
+		(at 207.01 109.22)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1d72f077-44a8-4960-b211-22cec478fa19")
+	)
+	(junction
 		(at 172.72 44.45)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3700868f-bd45-4dec-90fe-c2c9a1f7de60")
-	)
-	(junction
-		(at 193.04 41.91)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "3e9175ed-8707-4697-88f4-e72b525e460f")
-	)
-	(junction
-		(at 196.85 109.22)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "3e9c50b1-2b0d-4c04-8a81-4c6f47f2fec5")
 	)
 	(junction
 		(at 180.34 41.91)
@@ -1805,28 +1875,28 @@
 		(uuid "70b9a517-1e94-42c8-9259-6650ef891f55")
 	)
 	(junction
-		(at 198.12 44.45)
+		(at 203.2 44.45)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "8aa93bb1-f14f-47b5-86ab-cdc766aa2715")
+		(uuid "94eec2ab-4141-48d1-99cb-4807edc2ee0e")
+	)
+	(junction
+		(at 198.12 41.91)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "98b9731b-0d3c-4c2f-b674-fc8d9f7ffd7b")
+	)
+	(junction
+		(at 179.07 109.22)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a285f50b-bca5-4f14-9428-a527bb1f121b")
 	)
 	(junction
 		(at 176.53 63.5)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "add255ac-5877-4276-9633-4353d888afff")
-	)
-	(junction
-		(at 179.07 109.22)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d2ad7b02-4f00-47ce-aae3-df615be177b3")
-	)
-	(junction
-		(at 191.77 106.68)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d744d3af-5cdc-49ab-b619-29ce3fc62af5")
 	)
 	(junction
 		(at 175.26 129.54)
@@ -1990,7 +2060,7 @@
 	)
 	(wire
 		(pts
-			(xy 198.12 44.45) (xy 198.12 46.99)
+			(xy 203.2 44.45) (xy 203.2 46.99)
 		)
 		(stroke
 			(width 0)
@@ -2010,7 +2080,7 @@
 	)
 	(wire
 		(pts
-			(xy 180.34 41.91) (xy 193.04 41.91)
+			(xy 180.34 41.91) (xy 198.12 41.91)
 		)
 		(stroke
 			(width 0)
@@ -2120,7 +2190,7 @@
 	)
 	(wire
 		(pts
-			(xy 196.85 109.22) (xy 196.85 111.76)
+			(xy 207.01 109.22) (xy 207.01 111.76)
 		)
 		(stroke
 			(width 0)
@@ -2130,13 +2200,13 @@
 	)
 	(wire
 		(pts
-			(xy 198.12 44.45) (xy 212.09 44.45)
+			(xy 198.12 41.91) (xy 212.09 41.91)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "4a32cb15-2722-4108-bbec-b45744a724e9")
+		(uuid "47f23c39-c899-459d-9ebf-4372608a3b1f")
 	)
 	(wire
 		(pts
@@ -2180,6 +2250,16 @@
 	)
 	(wire
 		(pts
+			(xy 179.07 115.57) (xy 179.07 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "65b6ad46-2f10-4ac0-9837-818ca85fc2b3")
+	)
+	(wire
+		(pts
 			(xy 119.38 44.45) (xy 109.22 44.45)
 		)
 		(stroke
@@ -2197,6 +2277,16 @@
 			(type default)
 		)
 		(uuid "6a6e23f8-2edf-49c2-8bc9-693b18e7a327")
+	)
+	(wire
+		(pts
+			(xy 179.07 109.22) (xy 179.07 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "78e7b2d2-84b6-4509-98c6-e5ec8ed0b35f")
 	)
 	(wire
 		(pts
@@ -2230,16 +2320,6 @@
 	)
 	(wire
 		(pts
-			(xy 193.04 41.91) (xy 212.09 41.91)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "88356fe6-0f0e-4a72-a915-b1a329b1c470")
-	)
-	(wire
-		(pts
 			(xy 149.86 41.91) (xy 139.7 41.91)
 		)
 		(stroke
@@ -2250,7 +2330,7 @@
 	)
 	(wire
 		(pts
-			(xy 226.06 109.22) (xy 196.85 109.22)
+			(xy 226.06 109.22) (xy 207.01 109.22)
 		)
 		(stroke
 			(width 0)
@@ -2300,7 +2380,7 @@
 	)
 	(wire
 		(pts
-			(xy 193.04 41.91) (xy 193.04 46.99)
+			(xy 198.12 41.91) (xy 198.12 46.99)
 		)
 		(stroke
 			(width 0)
@@ -2350,7 +2430,7 @@
 	)
 	(wire
 		(pts
-			(xy 191.77 106.68) (xy 191.77 111.76)
+			(xy 201.93 106.68) (xy 201.93 111.76)
 		)
 		(stroke
 			(width 0)
@@ -2360,7 +2440,17 @@
 	)
 	(wire
 		(pts
-			(xy 171.45 106.68) (xy 191.77 106.68)
+			(xy 203.2 44.45) (xy 212.09 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b052f520-f919-4154-8c5d-9b1778023a30")
+	)
+	(wire
+		(pts
+			(xy 171.45 106.68) (xy 201.93 106.68)
 		)
 		(stroke
 			(width 0)
@@ -2410,7 +2500,7 @@
 	)
 	(wire
 		(pts
-			(xy 180.34 50.8) (xy 180.34 52.07)
+			(xy 180.34 49.53) (xy 180.34 52.07)
 		)
 		(stroke
 			(width 0)
@@ -2440,6 +2530,16 @@
 	)
 	(wire
 		(pts
+			(xy 179.07 109.22) (xy 207.01 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d689dde0-7dea-4fce-b96e-c6df1417d9cf")
+	)
+	(wire
+		(pts
 			(xy 167.64 49.53) (xy 167.64 44.45)
 		)
 		(stroke
@@ -2460,16 +2560,6 @@
 	)
 	(wire
 		(pts
-			(xy 179.07 109.22) (xy 196.85 109.22)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "db80bbcc-d5f7-4939-8688-6cb260b2ceb1")
-	)
-	(wire
-		(pts
 			(xy 144.78 53.34) (xy 144.78 46.99)
 		)
 		(stroke
@@ -2480,7 +2570,7 @@
 	)
 	(wire
 		(pts
-			(xy 227.33 106.68) (xy 191.77 106.68)
+			(xy 227.33 106.68) (xy 201.93 106.68)
 		)
 		(stroke
 			(width 0)
@@ -2490,7 +2580,17 @@
 	)
 	(wire
 		(pts
-			(xy 172.72 44.45) (xy 198.12 44.45)
+			(xy 180.34 41.91) (xy 180.34 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e0511e0c-5f82-44b7-b9fa-ccdc2ea23de0")
+	)
+	(wire
+		(pts
+			(xy 172.72 44.45) (xy 203.2 44.45)
 		)
 		(stroke
 			(width 0)
@@ -2527,16 +2627,6 @@
 			(type default)
 		)
 		(uuid "f145a034-18e2-4a72-ad39-a558c6f324a1")
-	)
-	(wire
-		(pts
-			(xy 180.34 41.91) (xy 180.34 43.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f67ce665-c4c3-4afd-922c-626a3ebcb928")
 	)
 	(wire
 		(pts
@@ -2897,6 +2987,88 @@
 		)
 	)
 	(symbol
+		(lib_id "canlogger_custom_lib:Jumper_Shunt")
+		(at 181.61 88.9 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board no)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "27404ade-e25e-402e-ae36-04e33fd6f7b6")
+		(property "Reference" "H7"
+			(at 184.15 88.1379 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "2p, 1.27"
+			(at 184.15 90.6779 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 180.848 88.138 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C150949.pdf"
+			(at 181.61 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Jumper, shunt"
+			(at 181.61 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part Name" "C150949"
+			(at 181.61 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 181.61 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "canlogger"
+				(path "/c59a6287-5b72-492b-aa01-526032899224/4f7c91a7-7232-40ec-8224-bb95fa54cbdb"
+					(reference "H7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "EasyEDA_Lib:DLW31SN222SQ2L")
 		(at 160.02 106.68 0)
 		(mirror x)
@@ -2986,6 +3158,15 @@
 			)
 		)
 		(property "LCSC Part Name" "两路 贴片共模滤波器 阻抗2.2kΩ@100MHz"
+			(at 160.02 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
 			(at 160.02 106.68 0)
 			(effects
 				(font
@@ -3113,6 +3294,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Pins" ""
+			(at 171.45 118.11 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "e75b78cf-676d-4359-a161-e629f54bee1b")
 		)
@@ -3193,6 +3383,15 @@
 			)
 		)
 		(property "Supplier Part" "C14663"
+			(at 116.84 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
 			(at 116.84 27.94 0)
 			(effects
 				(font
@@ -3314,6 +3513,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Pins" ""
+			(at 160.02 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "4"
 			(uuid "6b787a64-45c5-438a-b3f3-af1c2b387028")
 		)
@@ -3337,7 +3545,7 @@
 	)
 	(symbol
 		(lib_id "EasyEDA_Lib:PESD2CAN,215")
-		(at 195.58 59.69 270)
+		(at 200.66 59.69 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3346,7 +3554,7 @@
 		(fields_autoplaced yes)
 		(uuid "4fa0ae4e-a00a-42f0-bacb-42746d2477ae")
 		(property "Reference" "D2"
-			(at 201.93 58.4199 90)
+			(at 207.01 58.4199 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3355,7 +3563,7 @@
 			)
 		)
 		(property "Value" "PESD2CAN/ESDCAN01"
-			(at 201.93 60.9599 90)
+			(at 207.01 60.9599 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3364,7 +3572,7 @@
 			)
 		)
 		(property "Footprint" "EasyEDA_Lib:SOT-23-3_L2.9-W1.3-P1.90-LS2.4-BR"
-			(at 195.58 59.69 0)
+			(at 200.66 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3373,7 +3581,7 @@
 			)
 		)
 		(property "Datasheet" "https://item.szlcsc.com/datasheet/PESD2CAN%252C215/76300.html"
-			(at 195.58 59.69 0)
+			(at 200.66 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3382,7 +3590,7 @@
 			)
 		)
 		(property "Description" "Polarity:Bidirectional Reverse Stand-Off Voltage (Vrwm):24V Clamping Voltage:41V Peak Pulse Current (Ipp):5A@8/20us Peak Pulse Power Dissipation (Ppp):230W@8/20us Voltage - Breakdown:28V Reverse Leakage Current (Ir):1nA Number of Channels:2 Operating Temp"
-			(at 195.58 59.69 0)
+			(at 200.66 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3391,7 +3599,7 @@
 			)
 		)
 		(property "Manufacturer Part" "PESD2CAN,215"
-			(at 195.58 59.69 0)
+			(at 200.66 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3400,7 +3608,7 @@
 			)
 		)
 		(property "Manufacturer" "Nexperia(安世)"
-			(at 195.58 59.69 0)
+			(at 200.66 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3409,7 +3617,7 @@
 			)
 		)
 		(property "Supplier Part" "C75176"
-			(at 195.58 59.69 0)
+			(at 200.66 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3418,7 +3626,7 @@
 			)
 		)
 		(property "Supplier" "LCSC"
-			(at 195.58 59.69 0)
+			(at 200.66 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3427,7 +3635,16 @@
 			)
 		)
 		(property "LCSC Part Name" "双向ESD 24V截止 峰值脉冲电流：5A@8/20us"
-			(at 195.58 59.69 0)
+			(at 200.66 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 200.66 59.69 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3586,76 +3803,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Jumper:SolderJumper_2_Open")
-		(at 180.34 46.99 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "6d8efaa2-01f4-4073-8719-afa59a997e5b")
-		(property "Reference" "JP1"
-			(at 183.388 48.768 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SolderJumper_2_Open"
-			(at 176.53 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm"
-			(at 180.34 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 180.34 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Solder Jumper, 2-pole, open"
-			(at 180.34 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "9af60240-4cbf-4a17-8e96-57c7530eda05")
-		)
-		(pin "2"
-			(uuid "464e1b35-21cd-47b4-9391-6cf36fb8d761")
-		)
-		(instances
-			(project "canlogger"
-				(path "/c59a6287-5b72-492b-aa01-526032899224/4f7c91a7-7232-40ec-8224-bb95fa54cbdb"
-					(reference "JP1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
-		(at 195.58 72.39 0)
+		(at 200.66 72.39 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3664,7 +3813,7 @@
 		(fields_autoplaced yes)
 		(uuid "6f69f4e0-7cfc-4fe4-b45c-3981f563409f")
 		(property "Reference" "#PWR018"
-			(at 195.58 78.74 0)
+			(at 200.66 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3673,7 +3822,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 195.58 77.47 0)
+			(at 200.66 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3681,7 +3830,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 195.58 72.39 0)
+			(at 200.66 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3690,7 +3839,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 195.58 72.39 0)
+			(at 200.66 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3699,7 +3848,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 195.58 72.39 0)
+			(at 200.66 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3784,6 +3933,15 @@
 			)
 		)
 		(property "Supplier Part" "C14663"
+			(at 115.57 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
 			(at 115.57 92.71 0)
 			(effects
 				(font
@@ -3905,6 +4063,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Pins" ""
+			(at 129.54 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "a2ea1a2a-4605-491d-ba7b-7d281302d9c3")
 		)
@@ -4011,6 +4178,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Pins" ""
+			(at 144.78 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "df64162c-df35-428b-9273-9bf09f5f1641")
 		)
@@ -4021,6 +4197,75 @@
 			(project "canlogger"
 				(path "/c59a6287-5b72-492b-aa01-526032899224/4f7c91a7-7232-40ec-8224-bb95fa54cbdb"
 					(reference "C10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x02_Pin")
+		(at 184.15 115.57 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7df4ae63-469c-4056-9e0b-8bd38d1c13e8")
+		(property "Reference" "JP2"
+			(at 185.42 113.0299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "2p. 1.27"
+			(at 185.674 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "canlogger_custom_lib:PinHeader_1x02_P1.27mm_Vertical"
+			(at 184.15 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 184.15 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated"
+			(at 184.15 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "5caa9128-bc1b-4b6f-af32-066554f248f1")
+		)
+		(pin "1"
+			(uuid "491ec2db-4adc-4288-bd23-9a50a0e7743e")
+		)
+		(instances
+			(project ""
+				(path "/c59a6287-5b72-492b-aa01-526032899224/4f7c91a7-7232-40ec-8224-bb95fa54cbdb"
+					(reference "JP2")
 					(unit 1)
 				)
 			)
@@ -4099,6 +4344,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Pins" ""
+			(at 143.51 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "ff30850a-c40c-48dc-994b-392f5bacb047")
 		)
@@ -4109,6 +4363,88 @@
 			(project "canlogger"
 				(path "/c59a6287-5b72-492b-aa01-526032899224/4f7c91a7-7232-40ec-8224-bb95fa54cbdb"
 					(reference "C13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "canlogger_custom_lib:Jumper_Shunt")
+		(at 196.85 88.9 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board no)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9a2d4fab-ee22-41a6-ae0b-bdf22a1e4613")
+		(property "Reference" "H8"
+			(at 199.39 88.1379 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "2p, 1.27"
+			(at 199.39 90.6779 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 196.088 88.138 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C150949.pdf"
+			(at 196.85 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Jumper, shunt"
+			(at 196.85 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part Name" "C150949"
+			(at 196.85 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 196.85 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "canlogger"
+				(path "/c59a6287-5b72-492b-aa01-526032899224/4f7c91a7-7232-40ec-8224-bb95fa54cbdb"
+					(reference "H8")
 					(unit 1)
 				)
 			)
@@ -4179,6 +4515,15 @@
 			)
 		)
 		(property "Supplier Part" "C53987"
+			(at 175.26 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
 			(at 175.26 134.62 0)
 			(effects
 				(font
@@ -4401,8 +4746,77 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:Conn_01x02_Pin")
+		(at 185.42 49.53 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "be59d19f-f263-41d1-b6e2-0dd312ca3c4e")
+		(property "Reference" "JP1"
+			(at 186.69 46.9899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "2p. 1.27"
+			(at 186.944 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "canlogger_custom_lib:PinHeader_1x02_P1.27mm_Vertical"
+			(at 185.42 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 185.42 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated"
+			(at 185.42 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "c270372f-19b4-4620-8035-5edc6bc3cfe8")
+		)
+		(pin "1"
+			(uuid "3934a0da-6223-4794-a84d-e17d917cf9f3")
+		)
+		(instances
+			(project "canlogger"
+				(path "/c59a6287-5b72-492b-aa01-526032899224/4f7c91a7-7232-40ec-8224-bb95fa54cbdb"
+					(reference "JP1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
-		(at 194.31 137.16 0)
+		(at 204.47 137.16 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4411,7 +4825,7 @@
 		(fields_autoplaced yes)
 		(uuid "cc344389-a101-4b31-bf81-dc1d66ed0031")
 		(property "Reference" "#PWR025"
-			(at 194.31 143.51 0)
+			(at 204.47 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4420,7 +4834,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 194.31 142.24 0)
+			(at 204.47 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4428,7 +4842,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 194.31 137.16 0)
+			(at 204.47 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4437,7 +4851,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 194.31 137.16 0)
+			(at 204.47 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4446,7 +4860,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 194.31 137.16 0)
+			(at 204.47 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4762,6 +5176,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Pins" ""
+			(at 179.07 121.92 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "8162308e-dd52-400e-bdfe-ea7dbb323def")
 		)
@@ -4842,6 +5265,15 @@
 			)
 		)
 		(property "Supplier Part" "C53987"
+			(at 176.53 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
 			(at 176.53 69.85 0)
 			(effects
 				(font
@@ -5029,6 +5461,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Pins" ""
+			(at 128.27 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "db3fcc64-c99a-4446-9ac8-5affd2f0d263")
 		)
@@ -5160,6 +5601,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Pins" ""
+			(at 180.34 57.15 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "d3dbf31a-fff6-4e53-b20b-9152f1a5516b")
 		)
@@ -5273,6 +5723,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Pins" ""
+			(at 172.72 54.61 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "6d1ccb73-1bd8-4549-82ca-4cce02395b68")
 		)
@@ -5290,7 +5749,7 @@
 	)
 	(symbol
 		(lib_id "EasyEDA_Lib:PESD2CAN,215")
-		(at 194.31 124.46 270)
+		(at 204.47 124.46 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5299,7 +5758,7 @@
 		(fields_autoplaced yes)
 		(uuid "f2f5a513-a7ef-49ae-b0ac-6727eee06706")
 		(property "Reference" "D3"
-			(at 200.66 123.1899 90)
+			(at 210.82 123.1899 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5308,7 +5767,7 @@
 			)
 		)
 		(property "Value" "PESD2CAN/ESDCAN01"
-			(at 200.66 125.7299 90)
+			(at 210.82 125.7299 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5317,7 +5776,7 @@
 			)
 		)
 		(property "Footprint" "EasyEDA_Lib:SOT-23-3_L2.9-W1.3-P1.90-LS2.4-BR"
-			(at 194.31 124.46 0)
+			(at 204.47 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5326,7 +5785,7 @@
 			)
 		)
 		(property "Datasheet" "https://item.szlcsc.com/datasheet/PESD2CAN%252C215/76300.html"
-			(at 194.31 124.46 0)
+			(at 204.47 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5335,7 +5794,7 @@
 			)
 		)
 		(property "Description" "Polarity:Bidirectional Reverse Stand-Off Voltage (Vrwm):24V Clamping Voltage:41V Peak Pulse Current (Ipp):5A@8/20us Peak Pulse Power Dissipation (Ppp):230W@8/20us Voltage - Breakdown:28V Reverse Leakage Current (Ir):1nA Number of Channels:2 Operating Temp"
-			(at 194.31 124.46 0)
+			(at 204.47 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5344,7 +5803,7 @@
 			)
 		)
 		(property "Manufacturer Part" "PESD2CAN,215"
-			(at 194.31 124.46 0)
+			(at 204.47 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5353,7 +5812,7 @@
 			)
 		)
 		(property "Manufacturer" "Nexperia(安世)"
-			(at 194.31 124.46 0)
+			(at 204.47 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5362,7 +5821,7 @@
 			)
 		)
 		(property "Supplier Part" "C75176"
-			(at 194.31 124.46 0)
+			(at 204.47 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5371,7 +5830,7 @@
 			)
 		)
 		(property "Supplier" "LCSC"
-			(at 194.31 124.46 0)
+			(at 204.47 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5380,7 +5839,16 @@
 			)
 		)
 		(property "LCSC Part Name" "双向ESD 24V截止 峰值脉冲电流：5A@8/20us"
-			(at 194.31 124.46 0)
+			(at 204.47 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 204.47 124.46 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5401,74 +5869,6 @@
 			(project "canlogger"
 				(path "/c59a6287-5b72-492b-aa01-526032899224/4f7c91a7-7232-40ec-8224-bb95fa54cbdb"
 					(reference "D3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Jumper:SolderJumper_2_Open")
-		(at 179.07 113.03 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "fd04db20-41bf-4d86-838d-47d69109c339")
-		(property "Reference" "JP2"
-			(at 182.118 114.808 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SolderJumper_2_Open"
-			(at 175.26 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm"
-			(at 179.07 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 179.07 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Solder Jumper, 2-pole, open"
-			(at 179.07 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "ecda7776-8903-4950-81e4-3c5b5a84ac6e")
-		)
-		(pin "2"
-			(uuid "ec09ec25-993b-44ed-a767-cd9f49583c3b")
-		)
-		(instances
-			(project ""
-				(path "/c59a6287-5b72-492b-aa01-526032899224/4f7c91a7-7232-40ec-8224-bb95fa54cbdb"
-					(reference "JP2")
 					(unit 1)
 				)
 			)
